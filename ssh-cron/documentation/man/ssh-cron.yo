@@ -310,7 +310,7 @@ manpagebugs()
 manpagesection(COPYRIGHT)
     This is free software, distributed under the terms of the `GNU General
 Public License'. Copyright remains with the author. s() is available at
-tt(https://fbb-git.github.io/ssh-cron/).
+tt(https://fbb-git.gitlab.io/ssh-cron/).
 
 manpagesection(ORGANIZATION)
     Center for Information Technology, University of Groningen.
