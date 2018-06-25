@@ -1,6 +1,8 @@
 #!/bin/bash
 PROJECT=ssh-cron
 
+cd ~/git/${PROJECT}/src
+
                                         # load the version
 VERSION=`grep VERSION ${PROJECT}/VERSION |
     sed 's/#define[[:space:]]\+VERSION[[:space:]]\+"\([^"]*\).*/\1/'`

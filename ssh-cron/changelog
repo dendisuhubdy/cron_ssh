@@ -1,3 +1,11 @@
+ssh-cron (1.01.01)
+
+  * Migrated from Github to Gitlab
+  * Precompiled headers are used by default
+  * INSTALL.im uses g++ and standards version c++17
+
+ -- Frank B. Brokken <f.b.brokken@rug.nl>  Mon, 25 Jun 2018 12:00:53 +0200
+
 ssh-cron (1.01.00)
 
   * The user is interactively given an opportunity to remove an existing

@@ -62,7 +62,7 @@ itemization(
     it() S()'s daemon process itself spawns an bf(ssh-agent)(1) child
         process, executing all scheduled commands.
     
-    it() In addition, s()'s daemon defines communcation channels between
+    it() In addition, s()'s daemon defines communication channels between
        itself and its bf(ssh-agent)(1) child process;
 
     it() S()'s daemon sends the command bf(ssh-add)(1) to its child process as

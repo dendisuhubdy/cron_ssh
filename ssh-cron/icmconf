@@ -21,6 +21,8 @@
 #define SOURCES             "*.cc"
 #define TMP_DIR             "tmp"
 #define USE_ALL             "a"
+#define IH                  ".ih"
+#define PRECOMP             "-x c++-header"
 #define USE_ECHO            ON
 #define USE_VERSION
 #define DEFCOM              "program"
