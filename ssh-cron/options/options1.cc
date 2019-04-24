@@ -3,7 +3,7 @@
 Options::Options()
 :
     d_arg(ArgConfig::instance()),
-    d_msg(&d_multiStreambuf)
+    d_msg(&d_multiBuf)
 {
     // --help and --version already handled by versionHelp, but if nothing
     // is requested on the command line help is also provided.
@@ -35,7 +35,7 @@ Options::Options()
     if (d_arg.option('s'))
     {
         if (d_foreground)
-            d_multiStreambuf.insert(cout);
+            d_multiBuf.insert(cout);
         else
             wmsg << "--stdout ignored: " << d_arg.basename() << 
                     " runs as a daemon process" << endl;
@@ -56,7 +56,7 @@ Options::Options()
         if (not d_log)
             fmsg << "could not open " << logName << endl;
 
-        d_multiStreambuf.insert(d_log);
+        d_multiBuf.insert(d_log);
     }
 
     if (not d_arg.option(&d_mailer, 'm'))

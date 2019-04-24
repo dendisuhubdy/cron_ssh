@@ -6,7 +6,7 @@
 #include <bobcat/argconfig>
 #include <bobcat/linearmap>
 #include <bobcat/log>
-#include <bobcat/multistreambuf>
+#include <bobcat/multibuf>
 #include <bobcat/syslogstream>
 
 #include "../ipcfunction/ipcfunction.h"
@@ -23,7 +23,7 @@ class Options: public IPCFunction
     std::unique_ptr<FBB::SyslogStream> d_syslog;
     FBB::Log d_log;
 
-    FBB::MultiStreambuf d_multiStreambuf;
+    FBB::MultiBuf d_multiBuf;
     std::ostream d_msg;                     // d_msg handles all messages to
                                             // syslog and/or d_log
 

@@ -11,6 +11,6 @@ bool Options::setSyslog()
                 )
             );
 
-    d_multiStreambuf.insert(*d_syslog);
+    d_multiBuf.insert(*d_syslog);
     return true;
 }
